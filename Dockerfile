@@ -5,8 +5,8 @@ EXPOSE 8080
 WORKDIR /app
 
 # Copiar el JAR generado a la carpeta de trabajo
-COPY ./target/online.jar /app/hiWorld.jar
+COPY ./target/online.jar /app/online.jar
 
 # Configurar el ENTRYPOINT con los parámetros directamente
-ENTRYPOINT ["java", "-XX:+UseSerialGC", "-Xss512k", "-Xms128m", "-Xmx256m", "-jar", "/app/hiWorld.jar"]
+ENTRYPOINT ["java", "-XX:+UseSerialGC", "-Xss512k", "-Xms128m", "-Xmx256m", "-jar", "/app/online.jar"]
 
