@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
  *
  */
 @RestController
-@RequestMapping
 public class GeneralViewController {
 	
 	private static final Logger log = Logger.getLogger(GeneralViewController.class);
